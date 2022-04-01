@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Robot",sans-serif;
+}
+
+header{
+    position: fixed;
+    background: #22242A;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+
+}
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.left_area span{
+    color:#FF3535;
+} 
+ 
+
+
+.logout_btn{
+    padding: 5px;
+    background: #FF5757;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.logout_btn:hover{
+    background: #FF001A;
+}
+
+.sidebar{
+    background: #404040;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.sidebar h4{
+    color:#ccc;
+    margin-top:0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color:#fff;
+    display:block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.sidebar a:hover{
+    background:#FF3535;
+}
+
+.sidebar i{
+    padding-right: 10px;
+}
+
+label #sidebar_btn{
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor:pointer;
+    left:300px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+    color: #9F9F9F;
+}
+
+#check:checked ~ .sidebar{
+    left:-190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size:20px;
+    margin-left:170px;
+    width: 80px;
+}
+
+.content{
+    margin-left:250px;
+    background: url('https://th.bing.com/th/id/R.7d9ac0f816f657fdec710777d96a3711?rik=BzqltsBEjHYrdw&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1512138664757-360e0aad5132%3fixlib%3drb-1.2.1%26q%3d80%26fm%3djpg%26crop%3dentropy%26cs%3dtinysrgb%26w%3d1080%26fit%3dmax%26ixid%3deyJhcHBfaWQiOjEyMDd9&ehk=jepC%2fzfKe7kOMeXMiaHDroKCd1Ghr6G75Yx%2fVnHRiI8%3d&risl=&pid=ImgRaw&r=0') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+#check:checked ~ .content{
+    margin-left:60px;
+}
+
+#check{
+    display: none;
+}
+
